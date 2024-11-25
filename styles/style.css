@@ -1,41 +1,140 @@
-//* Общие стили */
-/* finlandica-regular - cyrillic */
+/* Подключение шрифта Finlandica */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Finlandica';
+    src: url('fonts/Finlandica-Regular.woff2') format('woff2'),
+         url('fonts/Finlandica-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/finlandica-v8-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  .logo {
-    width: 150px; /* Задайте желаемую ширину */
-    height: auto; /* Высота будет автоматически подстраиваться для сохранения пропорций */
 }
+
+@font-face {
+    font-family: 'Finlandica';
+    src: url('fonts/Finlandica-Bold.woff2') format('woff2'),
+         url('fonts/Finlandica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Основной стиль страницы */
+body {
+    font-family: 'Finlandica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    background-color: #0077cc; /* Цвет фона шапки */
-    padding: 20px; /* Отступы внутри шапки */
+    background-color: #f4f4f4;
+    padding: 10px 0;
 }
 
-nav ul {
-    list-style-type: none; /* Убираем маркеры у списка */
-    padding: 0; /* Убираем отступы */
-    display: flex; /* Используем flexbox для расположения элементов */
-    justify-content: space-around; /* Равномерное распределение элементов */
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: white; /* Цвет текста ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    font-weight: bold; /* Жирный текст */
+.nav-flex-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold; /* Жирный текст для выделения */
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+.nav-flex-item a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+.nav-flex-item-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    background: #f9f9f9;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px; /* Увеличенный размер текста */
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.competencies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.competencies img {
+    width: 100px;
+    height: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+    font-weight: normal; /* Обычный вес текста для списка */
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #333; /* Цвет фона подвала */
-    color: white; /* Цвет текста в подвале */
-    text-align: center; /* Центрируем текст */
-    padding: 20px; /* Отступы внутри подвала */
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px; /* Уменьшенный текст для футера */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }

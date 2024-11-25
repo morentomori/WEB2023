@@ -3,55 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Персональный сайт Имя Фамилия | Веб-технологии</title>
+    <title>Персональный сайт Вельшакова Ильи | Веб-технологии</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .social-icon {
-            width: 50px; /* задайте нужный размер */
-            height: 50px; /* задайте нужный размер */
-            margin: 10px; /* отступы между иконками */
-            transition: transform 0.3s; /* эффект при наведении */
-        }
-        .social-icon:hover {
-            transform: scale(1.1); /* увеличение при наведении */
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav-flex">
             <ul>
-                <li><a href="../index.html"><img src="../images/logo.jpg" alt="logo" style="width: 150px; height: auto;"></a></li>
-                <li><a href="index.html">О себе</a></li>
-                <li><a href="summary.html">Резюме</a></li>
-                <li><a href="portfolio.html">Портфолио</a></li>
-                <li><a href="index.html#competencies">Компетенции</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="nav-flex-item-logo">
+                    <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+                </li>
+                <li class="nav-flex-item"><a href="index.html">О себе</a></li>
+                <li class="nav-flex-item"><a href="summary.html">Резюме</a></li>
+                <li class="nav-flex-item"><a href="portfolio.html">Портфолио</a></li>
+                <li class="nav-flex-item"><a href="index.html#competencies">Компетенции</a></li>
+                <li class="nav-flex-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-
-        <footer>
-            <p><strong>Персональный сайт Вельшакова Ильи</strong></p>
-            <p>Добро пожаловать на мой сайт! Здесь вы найдете информацию о моих проектах, компетенциях и способах связи со мной. Я всегда открыт для новых возможностей и сотрудничества.</p>
-            <div class="social-icons">
-                <a href="https://vk.com/morentomori" target="_blank">
-                    <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="ВКонтакте" class="social-icon">
-                </a>
-                
-                <a href="https://t.me/+yN4Yt9zTfbNiOGRi" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="social-icon">
-                </a>
-            
-                <a href="https://github.com/morentomori" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
-                </a>
+    <main>
+        <section class="section">
+            <h1>Добро пожаловать!</h1>
+            <p>Меня зовут Вельшаков Илья. Я разработчик и всегда открыт для новых проектов и сотрудничества.</p>
+        </section>
+        <section id="competencies" class="section">
+            <h2>Мои компетенции</h2>
+            <div class="competencies">
+                <img src="../images/html-logo.png" alt="HTML">
+                <img src="../images/css-logo.png" alt="CSS">
+                <img src="../images/js-logo.png" alt="JavaScript">
+                <img src="../images/react-logo.png" alt="React">
+                <img src="../images/git-logo.png" alt="Git">
             </div>
-            <p>Сайт разработан Вельшаковым Ильей. Все права защищены © 2023.</p>
-        </footer>
+        </section>
+        <section class="section">
+            <h2>Услуги</h2>
+            <div class="services">
+                <ul>
+                    <li>Веб-разработка</li>
+                    <li>UI/UX дизайн</li>
+                </ul>
+                <ul>
+                    <li>Разработка SPA</li>
+                    <li>Адаптивный дизайн</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Портфолио</h2>
+            <form action="portfolio.html">
+                <button class="btn">Портфолио</button>
+            </form>
+        </section>
     </main>
-
+    <footer>
+        <p>Персональный сайт Вельшакова Ильи. Все права защищены © 2023</p>
+        <div class="social-icons">
+            <a href="https://vk.com/morentomori" target="_blank">
+                <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="ВКонтакте" class="social-icon">
+            </a>
+            <a href="https://t.me/+yN4Yt9zTfbNiOGRi" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://github.com/morentomori" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
+
 
 
