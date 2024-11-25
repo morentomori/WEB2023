@@ -1,10 +1,11 @@
 //* Общие стили */
-body {
-    font-family: 'Amiko', sans-serif; /* Используем шрифт Amiko */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Цвет фона страницы */
-    color: #333; /* Цвет текста */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/amiko-v14-devanagari-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 }
 
 header {
