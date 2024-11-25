@@ -1,8 +1,62 @@
-/* amiko-regular - devanagari */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Amiko';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/amiko-v14-devanagari-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+//* Общие стили */
+body {
+    font-family: 'Amiko', sans-serif; /* Используем шрифт Amiko */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона страницы */
+    color: #333; /* Цвет текста */
+}
+
+header {
+    background-color: #0077cc; /* Цвет фона шапки */
+    padding: 20px; /* Отступы внутри шапки */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для расположения элементов */
+    justify-content: space-around; /* Равномерное распределение элементов */
+}
+
+nav a {
+    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Жирный текст */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+footer {
+    background-color: #333; /* Цвет фона подвала */
+    color: white; /* Цвет текста в подвале */
+    text-align: center; /* Центрируем текст */
+    padding: 20px; /* Отступы внутри подвала */
+}
+
+.social-icons {
+    display: flex; /* Используем flexbox для расположения иконок */
+    justify-content: center; /* Центрируем иконки */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.social-icon {
+    width: 50px; /* Задаем размер иконок */
+    height: 50px; /* Задаем размер иконок */
+    margin: 10px; /* Отступы между иконками */
+    transition: transform 0.3s; /* Эффект при наведении */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Стиль для изображений логотипов в подвале (если нужно) */
+footer img {
+    max-width: 100%; /* Ограничиваем ширину изображений */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+}
