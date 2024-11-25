@@ -1,12 +1,12 @@
 //* Общие стили */
+/* finlandica-regular - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Amiko';
+    font-family: 'Finlandica';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/amiko-v14-devanagari-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/finlandica-v8-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-}
 
 header {
     background-color: #0077cc; /* Цвет фона шапки */
@@ -35,7 +35,4 @@ footer {
     color: white; /* Цвет текста в подвале */
     text-align: center; /* Центрируем текст */
     padding: 20px; /* Отступы внутри подвала */
-}
-
-
 }
