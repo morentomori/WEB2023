@@ -7,7 +7,10 @@
     font-weight: 400;
     src: url('../fonts/finlandica-v8-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-
+  .logo {
+    width: 150px; /* Задайте желаемую ширину */
+    height: auto; /* Высота будет автоматически подстраиваться для сохранения пропорций */
+}
 header {
     background-color: #0077cc; /* Цвет фона шапки */
     padding: 20px; /* Отступы внутри шапки */
