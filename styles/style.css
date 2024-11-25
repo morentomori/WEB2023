@@ -1,0 +1,132 @@
+/* Подключение шрифта Finlandica */
+@font-face {
+    font-family: 'Finlandica';
+    src: url('fonts/finlandica-v8-latin-regular.woff2') format('woff2'),
+         url('fonts/finlandica-v8-latin-regula.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Основной стиль страницы */
+body {
+    font-family: 'Finlandica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-flex-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold; /* Жирный текст для выделения */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-flex-item a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+.nav-flex-item-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    background: #f9f9f9;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px; /* Увеличенный размер текста */
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.competencies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.competencies img {
+    width: 100px;
+    height: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+    font-weight: normal; /* Обычный вес текста для списка */
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px; /* Уменьшенный текст для футера */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
