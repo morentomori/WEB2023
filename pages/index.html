@@ -3,61 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Персональный сайт Вельшакова Ильи | Веб-технологии</title>
+    <title>Персональный сайт Имя Фамилия | Веб-технологии</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="nav-flex">
+        <nav>
             <ul>
-                <li class="nav-flex-item-logo">
-                    <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" alt="logo" style="width: 150px; height: auto;">
+                    </a>
                 </li>
-                <li class="nav-flex-item"><a href="index.html">О себе</a></li>
-                <li class="nav-flex-item"><a href="summary.html">Резюме</a></li>
-                <li class="nav-flex-item"><a href="portfolio.html">Портфолио</a></li>
-                <li class="nav-flex-item"><a href="index.html#competencies">Компетенции</a></li>
-                <li class="nav-flex-item"><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html">О себе</a></li>
+                <li><a href="summary.html">Резюме</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="index.html#competencies">Компетенции</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="section">
-            <h1>Добро пожаловать!</h1>
-            <p>Меня зовут Вельшаков Илья. Я разработчик и всегда открыт для новых проектов и сотрудничества.</p>
+        <!-- Пример блока с изображением -->
+        <section>
+            <h1>Обо мне</h1>
+            <a href="images/about-me.jpg" target="_blank">
+                <img src="images/about-me.jpg" alt="Обо мне" style="width: 300px; height: auto;">
+            </a>
+            <p>Здесь немного информации обо мне.</p>
         </section>
-        <section id="competencies" class="section">
+
+        <section id="competencies">
             <h2>Мои компетенции</h2>
             <div class="competencies">
-                <img src="../images/html-logo.png" alt="HTML">
-                <img src="../images/css-logo.png" alt="CSS">
-                <img src="../images/js-logo.png" alt="JavaScript">
-                <img src="../images/react-logo.png" alt="React">
-                <img src="../images/git-logo.png" alt="Git">
+                <a href="images/logo-html5.png" target="_blank">
+                    <img src="images/logo-html5.png" alt="HTML5">
+                </a>
+                <a href="images/logo-css3.png" target="_blank">
+                    <img src="images/logo-css3.png" alt="CSS3">
+                </a>
+                <a href="images/logo-js.png" target="_blank">
+                    <img src="images/logo-js.png" alt="JavaScript">
+                </a>
+                <a href="images/logo-react.png" target="_blank">
+                    <img src="images/logo-react.png" alt="React">
+                </a>
+                <a href="images/logo-git.png" target="_blank">
+                    <img src="images/logo-git.png" alt="Git">
+                </a>
             </div>
-        </section>
-        <section class="section">
-            <h2>Услуги</h2>
-            <div class="services">
-                <ul>
-                    <li>Веб-разработка</li>
-                    <li>UI/UX дизайн</li>
-                </ul>
-                <ul>
-                    <li>Разработка SPA</li>
-                    <li>Адаптивный дизайн</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section">
-            <h2>Портфолио</h2>
-            <form action="portfolio.html">
-                <button class="btn">Портфолио</button>
-            </form>
         </section>
     </main>
+
     <footer>
-        <p>Персональный сайт Вельшакова Ильи. Все права защищены © 2023</p>
+        <p><strong>Персональный сайт Вельшакова Ильи</strong></p>
+        <p>Добро пожаловать на мой сайт! Здесь вы найдете информацию о моих проектах, компетенциях и способах связи со мной. Я всегда открыт для новых возможностей и сотрудничества.</p>
         <div class="social-icons">
             <a href="https://vk.com/morentomori" target="_blank">
                 <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="ВКонтакте" class="social-icon">
@@ -69,9 +70,11 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
             </a>
         </div>
+        <p>Сайт разработан Вельшаковым Ильей. Все права защищены © 2023.</p>
     </footer>
 </body>
 </html>
+
 
 
 
