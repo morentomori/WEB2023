@@ -1,27 +1,27 @@
 /* Общие стили */
 body {
     margin: 0;
-    font-family: 'Finlandica', sans-serif; /* Новый шрифт */
+    font-family: 'Roboto', sans-serif;
     color: #000; /* Черный текст */
-    background-color: #f5f5f5; /* Светлый фон */
+    background-color: #f5f5f5; /* Светлый фон для страницы */
 }
 
-/* Основной контент */
+/* Основной фон страницы */
 .main-content {
-    background-image: url('images/background.jpg'); /* Фоновое изображение */
+    background-image: url('images/background.jpg'); /* Фон страницы */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Фиксированный фон */
     padding: 20px;
     border-radius: 8px;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto; /* Центрирование блока */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
-/* Шапка */
+/* Шапка сайта */
 .header {
-    background-color: #ff5722; /* Оранжевый фон */
+    background-color: #ff5722; /* Яркий оранжевый фон */
     height: 300px;
     color: white; /* Белый текст */
     display: flex;
@@ -29,8 +29,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Finlandica', sans-serif; /* Новый шрифт */
+    font-family: 'Lobster', cursive; /* Эффектный шрифт для заголовка */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень */
+    position: relative;
 }
 
 .header h1 {
@@ -42,27 +43,28 @@ body {
     font-size: 20px;
     margin-top: 10px;
 }
-
 .logo-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center; /* Центрирование */
+    align-items: center; /* Вертикальное выравнивание */
+    margin-top: 20px; /* Отступ сверху */
 }
 
 .logo-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 3px solid white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100px; /* Задаем ширину */
+    height: 100px; /* Задаем высоту */
+    border-radius: 50%; /* Превращаем в круг */
+    object-fit: cover; /* Сохраняем пропорции внутри круга */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    border: 3px solid white; /* Белая рамка для контраста */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
 }
 
 .logo-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличенная тень */
+}
+
 }
 
 /* Меню навигации */
@@ -83,7 +85,7 @@ body {
 }
 
 .nav-list a {
-    color: #fff;
+    color: #fff; /* Белый текст для ссылок */
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -92,14 +94,14 @@ body {
 }
 
 .nav-list a:hover {
-    background-color: #ffd740;
-    color: #000;
+    background-color: #ffd740; /* Желтый фон при наведении */
+    color: #000; /* Черный текст */
 }
 
 /* Заголовки */
 h1, h2, h3 {
-    color: #333; /* Темно-серый цвет */
-    font-family: 'Finlandica', sans-serif;
+    color: white; /* Темно-синий цвет заголовков */
+    font-family: 'Oswald', sans-serif; /* Четкий и современный шрифт */
     margin-bottom: 15px;
 }
 
@@ -115,17 +117,45 @@ h3 {
     font-size: 24px;
 }
 
-/* Списки */
-ul, ol {
-    margin: 15px 0;
-    padding: 0 20px;
+/* Секции */
+.section {
+    margin-bottom: 40px;
 }
 
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bruh-image {
+    width: 150px; /* Уменьшенная ширина */
+    height: auto; /* Сохранение пропорций */
+    margin: 20px auto; /* Центрирование */
+    display: block; /* Центрирование через block */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+}
+
+.bruh-image:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Более сильная тень */
+}
+}
+
+/* Списки */
 ul {
+    margin: 15px 0;
+    padding: 0 20px;
     list-style-type: disc;
 }
 
 ol {
+    margin: 15px 0;
+    padding: 0 20px;
     list-style-type: decimal;
 }
 
@@ -138,7 +168,8 @@ table {
     background: white;
 }
 
-table th, table td {
+table th,
+table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
@@ -149,7 +180,7 @@ table th {
     color: white;
 }
 
-/* Блок цитат */
+/* Стили для блока цитат */
 blockquote {
     border-left: 4px solid #ff5722;
     background: rgba(255, 245, 238, 0.8);
@@ -163,8 +194,8 @@ blockquote {
 footer {
     text-align: center;
     padding: 15px 0;
-    background-color: #3f51b5;
-    color: #fff;
+    background-color: #3f51b5; /* Темно-синий фон */
+    color: black; /* Белый текст */
     font-size: 14px;
 }
 
@@ -175,6 +206,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
 }
 
 

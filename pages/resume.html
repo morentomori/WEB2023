@@ -5,12 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Резюме</title>
+    <style>
+       
+        .header {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-list li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-item {
+            margin: 15px;
+            text-align: center;
+        }
+        .skills-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo-container">
-            <img src="images/logo.jpg" alt="Logo" class="logo-image">
-        </div>
+<div class="logo-container">
+    <img src="images/logo.jpg" alt="Logo" class="logo-image">
+</div>
+
         <h1>Резюме Вельшакова Ильи</h1>
         <nav class="nav">
             <ul class="nav-list">
@@ -23,30 +75,6 @@
     </div>
 
     <div class="main-content">
-        <h2>Опыт работы</h2>
-        <ul>
-            <li>
-                <h3>Frontend Developer — <em>ABC Solutions</em></h3>
-                <p><strong>Декабрь 2020 – Январь 2023</strong></p>
-                <p>Разработал более 20 пользовательских интерфейсов с использованием React, внедрил современные UI/UX практики, что увеличило пользовательскую удовлетворённость на 35%.</p>
-            </li>
-            <li>
-                <h3>Full Stack Developer — <em>TechSpace</em></h3>
-                <p><strong>Февраль 2023 – Настоящее время</strong></p>
-                <p>Руководил разработкой масштабных веб-приложений, включая интеграцию RESTful API и управление базами данных PostgreSQL.</p>
-            </li>
-        </ul>
-
-        <h2>Образование</h2>
-        <ul>
-            <li>
-                <strong>Бакалавр компьютерных наук</strong> — Московский Государственный Университет (2015–2019)
-            </li>
-            <li>
-                <strong>Курсы по React и Node.js</strong> — Udemy, Coursera
-            </li>
-        </ul>
-
         <h2>Навыки</h2>
         <div class="skills-list">
             <div class="skills-item">
@@ -81,3 +109,4 @@
     </footer>
 </body>
 </html>
+
