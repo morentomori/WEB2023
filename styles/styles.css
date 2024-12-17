@@ -8,7 +8,7 @@ body {
 
 /* Основной фон страницы */
 .main-content {
-    background-image: url("images/background.jpg"); /* Фон страницы */
+    background-image: url("../images/background.jpg"); /* Фон страницы */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Фиксированный фон */
