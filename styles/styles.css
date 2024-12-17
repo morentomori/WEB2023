@@ -8,7 +8,7 @@ body {
 
 /* Основной фон страницы */
 .main-content {
-    background-image: url("images/background.jpg"C:\Users\admin\Desktop\гитхаб\WEB2023\WEB2023\images\background.jpg"); /* Фон страницы */
+    background-image: url(C:\Users\admin\Desktop\гитхаб\WEB2023\WEB2023\images\background.jpg"); /* Фон страницы */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Фиксированный фон */
